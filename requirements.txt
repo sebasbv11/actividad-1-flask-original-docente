@@ -1,0 +1,4 @@
+Flask==3.0.0
+bandit==1.7.5
+pip-audit==2.6.1
+gunicorn==21.2.0
