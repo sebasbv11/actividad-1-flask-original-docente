@@ -1,0 +1,103 @@
+05:36:30.497 INFO  Scanner configuration file: /opt/sonar-scanner/conf/sonar-scanner.properties
+05:36:30.502 INFO  Project root configuration file: /usr/src/fase_a/sonar-docente.properties
+05:36:30.519 INFO  SonarScanner CLI 8.1.0.6389
+05:36:30.529 INFO  Linux 6.6.114.1-microsoft-standard-WSL2 amd64
+05:36:31.567 INFO  Communicating with SonarQube Server 9.9.8.100196
+05:36:33.565 INFO  Load global settings
+05:36:33.616 INFO  Load global settings (done) | time=51ms
+05:36:33.618 INFO  Server id: 147B411E-AaFQVhQHHDoZUQJKJv8m
+05:36:33.623 INFO  User cache: /opt/sonar-scanner/.sonar/cache
+05:36:33.626 INFO  Load/download plugins
+05:36:33.626 INFO  Load plugins index
+05:36:33.652 INFO  Load plugins index (done) | time=26ms
+05:36:39.687 INFO  Load/download plugins (done) | time=6061ms
+05:36:40.099 INFO  Process project properties
+05:36:40.109 INFO  Process project properties (done) | time=10ms
+05:36:40.113 INFO  Execute project builders
+05:36:40.115 INFO  Execute project builders (done) | time=2ms
+05:36:40.123 INFO  Project key: actividad1-a-docente
+05:36:40.123 INFO  Base dir: /usr/src
+05:36:40.123 INFO  Working dir: /tmp/.scannerwork
+05:36:40.135 INFO  Load project settings for component key: 'actividad1-a-docente'
+05:36:40.181 INFO  Load project settings for component key: 'actividad1-a-docente' (done) | time=45ms
+05:36:40.310 INFO  Load quality profiles
+05:36:40.352 INFO  Load quality profiles (done) | time=42ms
+05:36:40.363 INFO  Load active rules
+05:36:41.931 INFO  Load active rules (done) | time=1568ms
+05:36:41.937 INFO  Load analysis cache
+05:36:41.953 INFO  Load analysis cache (3.3 kB) | time=16ms
+05:36:42.018 INFO  Load project repositories
+05:36:42.035 INFO  Load project repositories (done) | time=17ms
+05:36:42.064 INFO  Indexing files...
+05:36:42.065 INFO  Project configuration:
+05:36:42.065 INFO    Included sources: app.py
+05:36:42.066 INFO    Excluded sources: venv/**, .venv/**, documentos/**, fase_a/evidencias/**
+05:36:53.003 INFO  1 file indexed
+05:36:53.003 INFO  3125 files ignored because of inclusion/exclusion patterns
+05:36:53.005 INFO  Quality profile for py: Sonar way
+05:36:53.005 INFO  ------------- Run sensors on module Actividad 1 - Fase A - Original docente
+05:36:53.089 INFO  Load metrics repository
+05:36:53.117 INFO  Load metrics repository (done) | time=28ms
+05:36:54.244 INFO  Sensor Python Sensor [python]
+05:36:54.248 WARN  No explicit support for version 3.13. Python version has been set to 3.10.
+05:36:54.263 INFO  Starting global symbols computation
+05:36:54.266 INFO  1 source file to be analyzed
+05:36:54.641 INFO  1/1 source file has been analyzed
+05:36:54.678 INFO  Starting rules execution
+05:36:54.680 INFO  1 source file to be analyzed
+05:36:55.112 INFO  1/1 source file has been analyzed
+05:36:55.113 INFO  The Python analyzer was able to leverage cached data from previous analyses for 0 out of 1 files. These files were not parsed.
+05:36:55.113 INFO  Sensor Python Sensor [python] (done) | time=870ms
+05:36:55.113 INFO  Sensor Cobertura Sensor for Python coverage [python]
+05:37:05.099 INFO  Sensor Cobertura Sensor for Python coverage [python] (done) | time=9986ms
+05:37:05.099 INFO  Sensor PythonXUnitSensor [python]
+05:37:13.037 INFO  Sensor PythonXUnitSensor [python] (done) | time=7938ms
+05:37:13.037 INFO  Sensor Import of Bandit issues [python]
+05:37:13.042 INFO  Importing /usr/src/fase_a/evidencias/bandit-docente.json
+05:37:13.050 INFO  Sensor Import of Bandit issues [python] (done) | time=13ms
+05:37:13.050 INFO  Sensor JaCoCo XML Report Importer [jacoco]
+05:37:13.052 INFO  'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+05:37:13.053 INFO  No report imported, no coverage information will be imported by JaCoCo XML Report Importer
+05:37:13.053 INFO  Sensor JaCoCo XML Report Importer [jacoco] (done) | time=3ms
+05:37:13.053 INFO  Sensor CSS Rules [javascript]
+05:37:13.053 INFO  No CSS, PHP, HTML or VueJS files are found in the project. CSS analysis is skipped.
+05:37:13.054 INFO  Sensor CSS Rules [javascript] (done) | time=0ms
+05:37:13.054 INFO  Sensor C# Project Type Information [csharp]
+05:37:13.054 INFO  Sensor C# Project Type Information [csharp] (done) | time=0ms
+05:37:13.054 INFO  Sensor C# Analysis Log [csharp]
+05:37:13.060 INFO  Sensor C# Analysis Log [csharp] (done) | time=6ms
+05:37:13.060 INFO  Sensor C# Properties [csharp]
+05:37:13.060 INFO  Sensor C# Properties [csharp] (done) | time=0ms
+05:37:13.060 INFO  Sensor HTML [web]
+05:37:13.061 INFO  Sensor HTML [web] (done) | time=1ms
+05:37:13.061 INFO  Sensor TextAndSecretsSensor [text]
+05:37:13.066 INFO  1 source file to be analyzed
+05:37:13.073 INFO  1/1 source file has been analyzed
+05:37:13.074 INFO  Sensor TextAndSecretsSensor [text] (done) | time=13ms
+05:37:13.074 INFO  Sensor VB.NET Project Type Information [vbnet]
+05:37:13.074 INFO  Sensor VB.NET Project Type Information [vbnet] (done) | time=0ms
+05:37:13.074 INFO  Sensor VB.NET Analysis Log [vbnet]
+05:37:13.082 INFO  Sensor VB.NET Analysis Log [vbnet] (done) | time=8ms
+05:37:13.082 INFO  Sensor VB.NET Properties [vbnet]
+05:37:13.082 INFO  Sensor VB.NET Properties [vbnet] (done) | time=0ms
+05:37:13.082 INFO  Sensor IaC Docker Sensor [iac]
+05:37:13.086 INFO  0 source files to be analyzed
+05:37:13.141 INFO  0/0 source files have been analyzed
+05:37:13.141 INFO  Sensor IaC Docker Sensor [iac] (done) | time=59ms
+05:37:13.145 INFO  ------------- Run sensors on project
+05:37:13.198 INFO  Sensor Analysis Warnings import [csharp]
+05:37:13.199 INFO  Sensor Analysis Warnings import [csharp] (done) | time=1ms
+05:37:13.199 INFO  Sensor Zero Coverage Sensor
+05:37:13.203 INFO  Sensor Zero Coverage Sensor (done) | time=4ms
+05:37:13.205 INFO  SCM Publisher is disabled
+05:37:13.207 INFO  CPD Executor Calculating CPD for 1 file
+05:37:13.213 INFO  CPD Executor CPD calculation finished (done) | time=5ms
+05:37:13.255 INFO  Analysis report generated in 40ms, dir size=132.9 kB
+05:37:13.264 INFO  Analysis report compressed in 9ms, zip size=22.4 kB
+05:37:13.293 INFO  Analysis report uploaded in 29ms
+05:37:13.295 INFO  ANALYSIS SUCCESSFUL, you can find the results at: http://host.docker.internal:9000/dashboard?id=actividad1-a-docente
+05:37:13.295 INFO  Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+05:37:13.295 INFO  More about the report processing at http://host.docker.internal:9000/api/ce/task?id=AaFSqfhBHDoZUQJKJ52b
+05:37:13.304 INFO  Analysis total time: 33.510 s
+05:37:13.305 INFO  EXECUTION SUCCESS
+05:37:13.306 INFO  Total time: 42.810s

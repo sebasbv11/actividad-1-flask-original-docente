@@ -1,0 +1,15 @@
+{
+  "command": "python -m unittest discover -s fase_a -p test_fase_a.py -v",
+  "observedAtUtc": "2026-10-19T05:41:57.141761+00:00",
+  "testsRun": 4,
+  "failures": 0,
+  "errors": 0,
+  "status": "OK",
+  "scope": [
+    "credenciales validas en ambas versiones",
+    "inyeccion aceptada antes y rechazada despues",
+    "bcrypt en lugar de texto claro",
+    "bloqueo con un mismo LimitadorIntentos tras cinco fallos"
+  ],
+  "note": "Pruebas funcionales posteriores al analisis estatico; no constituyen hallazgos de SonarQube."
+}

@@ -1,5 +1,23 @@
 # Actividad 1 Aplicación Flask original del docente
 
+## Trabajo de la fase A en la rama sonarqube
+
+La aplicación original permanece en `app.py`, sin cambios respecto de `main`.
+El análisis se documenta en [`fase_a/INFORME.md`](fase_a/INFORME.md), con tres
+proyectos locales de SonarQube: original docente, ejemplo complementario
+vulnerable y ejemplo corregido. Los casos SQL/contraseñas pertenecen al ejemplo
+de autenticación, no a la aplicación original de clientes. Esta distinción y
+el requisito de confirmar la fuente vulnerable designada por el docente se
+explican en el informe.
+
+Los reportes reales, las cuatro capturas nuevas y el resumen de cuatro pruebas
+correctas están en `fase_a/evidencias/`. El documento Word revisado está en
+[`fase_a/Informe_SAST_DAST_Fase_A_revisada.docx`](fase_a/Informe_SAST_DAST_Fase_A_revisada.docx).
+Su sección B se conserva como evidencia histórica y no acredita una nueva
+ejecución DAST en la rama `owasp-zap`.
+
+## Código de la primera actividad
+
 Transcripción del código de la guía **Unidad2_AnalisisEsSAST.pdf**, titulada
 «Implementación de análisis estático de código», páginas 1 a 11.
 

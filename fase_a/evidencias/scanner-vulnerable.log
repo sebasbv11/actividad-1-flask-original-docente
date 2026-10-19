@@ -1,0 +1,103 @@
+05:37:22.268 INFO  Scanner configuration file: /opt/sonar-scanner/conf/sonar-scanner.properties
+05:37:22.274 INFO  Project root configuration file: /usr/src/fase_a/sonar-vulnerable.properties
+05:37:22.309 INFO  SonarScanner CLI 8.1.0.6389
+05:37:22.318 INFO  Linux 6.6.114.1-microsoft-standard-WSL2 amd64
+05:37:23.644 INFO  Communicating with SonarQube Server 9.9.8.100196
+05:37:25.702 INFO  Load global settings
+05:37:25.754 INFO  Load global settings (done) | time=53ms
+05:37:25.756 INFO  Server id: 147B411E-AaFQVhQHHDoZUQJKJv8m
+05:37:25.759 INFO  User cache: /opt/sonar-scanner/.sonar/cache
+05:37:25.763 INFO  Load/download plugins
+05:37:25.763 INFO  Load plugins index
+05:37:25.798 INFO  Load plugins index (done) | time=35ms
+05:37:31.741 INFO  Load/download plugins (done) | time=5978ms
+05:37:32.342 INFO  Process project properties
+05:37:32.350 INFO  Process project properties (done) | time=8ms
+05:37:32.355 INFO  Execute project builders
+05:37:32.357 INFO  Execute project builders (done) | time=2ms
+05:37:32.362 INFO  Project key: actividad1-a-casos-vulnerable
+05:37:32.363 INFO  Base dir: /usr/src
+05:37:32.363 INFO  Working dir: /tmp/.scannerwork
+05:37:32.371 INFO  Load project settings for component key: 'actividad1-a-casos-vulnerable'
+05:37:32.388 INFO  Load project settings for component key: 'actividad1-a-casos-vulnerable' (done) | time=17ms
+05:37:32.519 INFO  Load quality profiles
+05:37:32.565 INFO  Load quality profiles (done) | time=46ms
+05:37:32.580 INFO  Load active rules
+05:37:34.046 INFO  Load active rules (done) | time=1466ms
+05:37:34.055 INFO  Load analysis cache
+05:37:34.067 INFO  Load analysis cache (404) | time=12ms
+05:37:34.125 INFO  Load project repositories
+05:37:34.136 INFO  Load project repositories (done) | time=11ms
+05:37:34.164 INFO  Indexing files...
+05:37:34.165 INFO  Project configuration:
+05:37:34.167 INFO    Included sources: fase_a/login_sga_vulnerable.py
+05:37:34.167 INFO    Excluded sources: venv/**, .venv/**, documentos/**, fase_a/evidencias/**
+05:37:43.938 INFO  1 file indexed
+05:37:43.938 INFO  3127 files ignored because of inclusion/exclusion patterns
+05:37:43.941 INFO  Quality profile for py: Sonar way
+05:37:43.941 INFO  ------------- Run sensors on module Actividad 1 - Fase A - Casos 1 y 3 vulnerables
+05:37:44.064 INFO  Load metrics repository
+05:37:44.104 INFO  Load metrics repository (done) | time=40ms
+05:37:45.679 INFO  Sensor Python Sensor [python]
+05:37:45.684 WARN  No explicit support for version 3.13. Python version has been set to 3.10.
+05:37:45.700 INFO  Starting global symbols computation
+05:37:45.703 INFO  1 source file to be analyzed
+05:37:46.018 INFO  1/1 source file has been analyzed
+05:37:46.047 INFO  Starting rules execution
+05:37:46.056 INFO  1 source file to be analyzed
+05:37:46.282 INFO  1/1 source file has been analyzed
+05:37:46.283 INFO  The Python analyzer was able to leverage cached data from previous analyses for 0 out of 1 files. These files were not parsed.
+05:37:46.283 INFO  Sensor Python Sensor [python] (done) | time=605ms
+05:37:46.284 INFO  Sensor Cobertura Sensor for Python coverage [python]
+05:37:57.867 INFO  Sensor Cobertura Sensor for Python coverage [python] (done) | time=11584ms
+05:37:57.867 INFO  Sensor PythonXUnitSensor [python]
+05:38:05.826 INFO  Sensor PythonXUnitSensor [python] (done) | time=7959ms
+05:38:05.826 INFO  Sensor Import of Bandit issues [python]
+05:38:05.829 INFO  Importing /usr/src/fase_a/evidencias/bandit-vulnerable.json
+05:38:05.840 INFO  Sensor Import of Bandit issues [python] (done) | time=14ms
+05:38:05.840 INFO  Sensor JaCoCo XML Report Importer [jacoco]
+05:38:05.841 INFO  'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+05:38:05.843 INFO  No report imported, no coverage information will be imported by JaCoCo XML Report Importer
+05:38:05.843 INFO  Sensor JaCoCo XML Report Importer [jacoco] (done) | time=3ms
+05:38:05.843 INFO  Sensor CSS Rules [javascript]
+05:38:05.844 INFO  No CSS, PHP, HTML or VueJS files are found in the project. CSS analysis is skipped.
+05:38:05.844 INFO  Sensor CSS Rules [javascript] (done) | time=1ms
+05:38:05.844 INFO  Sensor C# Project Type Information [csharp]
+05:38:05.845 INFO  Sensor C# Project Type Information [csharp] (done) | time=1ms
+05:38:05.845 INFO  Sensor C# Analysis Log [csharp]
+05:38:05.852 INFO  Sensor C# Analysis Log [csharp] (done) | time=7ms
+05:38:05.852 INFO  Sensor C# Properties [csharp]
+05:38:05.853 INFO  Sensor C# Properties [csharp] (done) | time=1ms
+05:38:05.853 INFO  Sensor HTML [web]
+05:38:05.855 INFO  Sensor HTML [web] (done) | time=2ms
+05:38:05.855 INFO  Sensor TextAndSecretsSensor [text]
+05:38:05.860 INFO  1 source file to be analyzed
+05:38:05.874 INFO  1/1 source file has been analyzed
+05:38:05.874 INFO  Sensor TextAndSecretsSensor [text] (done) | time=19ms
+05:38:05.874 INFO  Sensor VB.NET Project Type Information [vbnet]
+05:38:05.876 INFO  Sensor VB.NET Project Type Information [vbnet] (done) | time=2ms
+05:38:05.876 INFO  Sensor VB.NET Analysis Log [vbnet]
+05:38:05.883 INFO  Sensor VB.NET Analysis Log [vbnet] (done) | time=7ms
+05:38:05.883 INFO  Sensor VB.NET Properties [vbnet]
+05:38:05.883 INFO  Sensor VB.NET Properties [vbnet] (done) | time=0ms
+05:38:05.883 INFO  Sensor IaC Docker Sensor [iac]
+05:38:05.886 INFO  0 source files to be analyzed
+05:38:05.919 INFO  0/0 source files have been analyzed
+05:38:05.919 INFO  Sensor IaC Docker Sensor [iac] (done) | time=36ms
+05:38:05.923 INFO  ------------- Run sensors on project
+05:38:05.963 INFO  Sensor Analysis Warnings import [csharp]
+05:38:05.964 INFO  Sensor Analysis Warnings import [csharp] (done) | time=1ms
+05:38:05.964 INFO  Sensor Zero Coverage Sensor
+05:38:05.974 INFO  Sensor Zero Coverage Sensor (done) | time=10ms
+05:38:05.975 INFO  SCM Publisher is disabled
+05:38:05.977 INFO  CPD Executor Calculating CPD for 1 file
+05:38:05.983 INFO  CPD Executor CPD calculation finished (done) | time=4ms
+05:38:06.033 INFO  Analysis report generated in 48ms, dir size=128.5 kB
+05:38:06.041 INFO  Analysis report compressed in 8ms, zip size=20.3 kB
+05:38:06.064 INFO  Analysis report uploaded in 23ms
+05:38:06.066 INFO  ANALYSIS SUCCESSFUL, you can find the results at: http://host.docker.internal:9000/dashboard?id=actividad1-a-casos-vulnerable
+05:38:06.066 INFO  Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+05:38:06.066 INFO  More about the report processing at http://host.docker.internal:9000/api/ce/task?id=AaFSqsZoHDoZUQJKJ52l
+05:38:06.072 INFO  Analysis total time: 34.172 s
+05:38:06.073 INFO  EXECUTION SUCCESS
+05:38:06.074 INFO  Total time: 43.810s

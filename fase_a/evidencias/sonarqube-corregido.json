@@ -1,0 +1,82 @@
+{
+  "project": "actividad1-a-casos-corregido",
+  "source": "fase_a/login_sga_refactorizado.py",
+  "sha256": "41cb0d7bc5bd44a2a9990ac83f3c861e43bb1dce533e68db935fc99d6a237799",
+  "analysisId": "AaFSq38k2qT0k9Qyfa7W",
+  "generatedUtc": "2026-10-19T05:38:56.456258+00:00",
+  "issues": {
+    "total": 0,
+    "p": 1,
+    "ps": 500,
+    "paging": {
+      "pageIndex": 1,
+      "pageSize": 500,
+      "total": 0
+    },
+    "effortTotal": 0,
+    "issues": [],
+    "components": [],
+    "facets": []
+  },
+  "hotspots": {
+    "paging": {
+      "pageIndex": 1,
+      "pageSize": 500,
+      "total": 0
+    },
+    "hotspots": [],
+    "components": []
+  },
+  "measures": {
+    "component": {
+      "key": "actividad1-a-casos-corregido",
+      "name": "Actividad 1 - Fase A - Casos 1 y 3 corregidos",
+      "qualifier": "TRK",
+      "measures": [
+        {
+          "metric": "security_hotspots",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "code_smells",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "bugs",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "ncloc",
+          "value": "67"
+        },
+        {
+          "metric": "duplicated_lines_density",
+          "value": "0.0",
+          "bestValue": true
+        },
+        {
+          "metric": "vulnerabilities",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    }
+  },
+  "qualityGate": {
+    "projectStatus": {
+      "status": "OK",
+      "conditions": [],
+      "periods": [],
+      "ignoredConditions": false,
+      "caycStatus": "compliant"
+    }
+  }
+}

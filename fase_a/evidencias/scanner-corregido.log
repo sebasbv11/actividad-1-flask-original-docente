@@ -1,0 +1,103 @@
+05:38:10.142 INFO  Scanner configuration file: /opt/sonar-scanner/conf/sonar-scanner.properties
+05:38:10.149 INFO  Project root configuration file: /usr/src/fase_a/sonar-corregido.properties
+05:38:10.180 INFO  SonarScanner CLI 8.1.0.6389
+05:38:10.187 INFO  Linux 6.6.114.1-microsoft-standard-WSL2 amd64
+05:38:11.149 INFO  Communicating with SonarQube Server 9.9.8.100196
+05:38:13.394 INFO  Load global settings
+05:38:13.452 INFO  Load global settings (done) | time=59ms
+05:38:13.453 INFO  Server id: 147B411E-AaFQVhQHHDoZUQJKJv8m
+05:38:13.460 INFO  User cache: /opt/sonar-scanner/.sonar/cache
+05:38:13.464 INFO  Load/download plugins
+05:38:13.464 INFO  Load plugins index
+05:38:13.494 INFO  Load plugins index (done) | time=30ms
+05:38:20.106 INFO  Load/download plugins (done) | time=6642ms
+05:38:20.576 INFO  Process project properties
+05:38:20.587 INFO  Process project properties (done) | time=11ms
+05:38:20.593 INFO  Execute project builders
+05:38:20.595 INFO  Execute project builders (done) | time=2ms
+05:38:20.601 INFO  Project key: actividad1-a-casos-corregido
+05:38:20.601 INFO  Base dir: /usr/src
+05:38:20.601 INFO  Working dir: /tmp/.scannerwork
+05:38:20.607 INFO  Load project settings for component key: 'actividad1-a-casos-corregido'
+05:38:20.625 INFO  Load project settings for component key: 'actividad1-a-casos-corregido' (done) | time=18ms
+05:38:20.759 INFO  Load quality profiles
+05:38:20.796 INFO  Load quality profiles (done) | time=37ms
+05:38:20.808 INFO  Load active rules
+05:38:25.022 INFO  Load active rules (done) | time=4214ms
+05:38:25.032 INFO  Load analysis cache
+05:38:25.044 INFO  Load analysis cache (404) | time=12ms
+05:38:25.113 INFO  Load project repositories
+05:38:25.129 INFO  Load project repositories (done) | time=16ms
+05:38:25.160 INFO  Indexing files...
+05:38:25.161 INFO  Project configuration:
+05:38:25.161 INFO    Included sources: fase_a/login_sga_refactorizado.py
+05:38:25.161 INFO    Excluded sources: venv/**, .venv/**, documentos/**, fase_a/evidencias/**
+05:38:33.736 INFO  1 file indexed
+05:38:33.737 INFO  3130 files ignored because of inclusion/exclusion patterns
+05:38:33.738 INFO  Quality profile for py: Sonar way
+05:38:33.738 INFO  ------------- Run sensors on module Actividad 1 - Fase A - Casos 1 y 3 corregidos
+05:38:33.846 INFO  Load metrics repository
+05:38:33.887 INFO  Load metrics repository (done) | time=41ms
+05:38:35.682 INFO  Sensor Python Sensor [python]
+05:38:35.688 WARN  No explicit support for version 3.13. Python version has been set to 3.10.
+05:38:35.703 INFO  Starting global symbols computation
+05:38:35.706 INFO  1 source file to be analyzed
+05:38:35.996 INFO  1/1 source file has been analyzed
+05:38:36.043 INFO  Starting rules execution
+05:38:36.044 INFO  1 source file to be analyzed
+05:38:36.273 INFO  1/1 source file has been analyzed
+05:38:36.273 INFO  The Python analyzer was able to leverage cached data from previous analyses for 0 out of 1 files. These files were not parsed.
+05:38:36.273 INFO  Sensor Python Sensor [python] (done) | time=591ms
+05:38:36.273 INFO  Sensor Cobertura Sensor for Python coverage [python]
+05:38:44.472 INFO  Sensor Cobertura Sensor for Python coverage [python] (done) | time=8199ms
+05:38:44.472 INFO  Sensor PythonXUnitSensor [python]
+05:38:52.485 INFO  Sensor PythonXUnitSensor [python] (done) | time=8013ms
+05:38:52.485 INFO  Sensor Import of Bandit issues [python]
+05:38:52.491 INFO  Importing /usr/src/fase_a/evidencias/bandit-corregido.json
+05:38:52.496 INFO  Sensor Import of Bandit issues [python] (done) | time=11ms
+05:38:52.496 INFO  Sensor JaCoCo XML Report Importer [jacoco]
+05:38:52.498 INFO  'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+05:38:52.500 INFO  No report imported, no coverage information will be imported by JaCoCo XML Report Importer
+05:38:52.500 INFO  Sensor JaCoCo XML Report Importer [jacoco] (done) | time=4ms
+05:38:52.500 INFO  Sensor CSS Rules [javascript]
+05:38:52.503 INFO  No CSS, PHP, HTML or VueJS files are found in the project. CSS analysis is skipped.
+05:38:52.503 INFO  Sensor CSS Rules [javascript] (done) | time=3ms
+05:38:52.503 INFO  Sensor C# Project Type Information [csharp]
+05:38:52.506 INFO  Sensor C# Project Type Information [csharp] (done) | time=3ms
+05:38:52.506 INFO  Sensor C# Analysis Log [csharp]
+05:38:52.518 INFO  Sensor C# Analysis Log [csharp] (done) | time=12ms
+05:38:52.518 INFO  Sensor C# Properties [csharp]
+05:38:52.518 INFO  Sensor C# Properties [csharp] (done) | time=0ms
+05:38:52.518 INFO  Sensor HTML [web]
+05:38:52.521 INFO  Sensor HTML [web] (done) | time=3ms
+05:38:52.521 INFO  Sensor TextAndSecretsSensor [text]
+05:38:52.533 INFO  1 source file to be analyzed
+05:38:52.544 INFO  1/1 source file has been analyzed
+05:38:52.545 INFO  Sensor TextAndSecretsSensor [text] (done) | time=24ms
+05:38:52.545 INFO  Sensor VB.NET Project Type Information [vbnet]
+05:38:52.546 INFO  Sensor VB.NET Project Type Information [vbnet] (done) | time=1ms
+05:38:52.546 INFO  Sensor VB.NET Analysis Log [vbnet]
+05:38:52.555 INFO  Sensor VB.NET Analysis Log [vbnet] (done) | time=9ms
+05:38:52.556 INFO  Sensor VB.NET Properties [vbnet]
+05:38:52.556 INFO  Sensor VB.NET Properties [vbnet] (done) | time=0ms
+05:38:52.556 INFO  Sensor IaC Docker Sensor [iac]
+05:38:52.558 INFO  0 source files to be analyzed
+05:38:52.592 INFO  0/0 source files have been analyzed
+05:38:52.592 INFO  Sensor IaC Docker Sensor [iac] (done) | time=36ms
+05:38:52.598 INFO  ------------- Run sensors on project
+05:38:52.669 INFO  Sensor Analysis Warnings import [csharp]
+05:38:52.670 INFO  Sensor Analysis Warnings import [csharp] (done) | time=1ms
+05:38:52.670 INFO  Sensor Zero Coverage Sensor
+05:38:52.677 INFO  Sensor Zero Coverage Sensor (done) | time=7ms
+05:38:52.679 INFO  SCM Publisher is disabled
+05:38:52.682 INFO  CPD Executor Calculating CPD for 1 file
+05:38:52.687 INFO  CPD Executor CPD calculation finished (done) | time=5ms
+05:38:52.742 INFO  Analysis report generated in 53ms, dir size=130.5 kB
+05:38:52.748 INFO  Analysis report compressed in 6ms, zip size=21.3 kB
+05:38:52.771 INFO  Analysis report uploaded in 23ms
+05:38:52.773 INFO  ANALYSIS SUCCESSFUL, you can find the results at: http://host.docker.internal:9000/dashboard?id=actividad1-a-casos-corregido
+05:38:52.773 INFO  Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+05:38:52.773 INFO  More about the report processing at http://host.docker.internal:9000/api/ce/task?id=AaFSq3zcHDoZUQJKJ52w
+05:38:52.785 INFO  Analysis total time: 32.574 s
+05:38:52.786 INFO  EXECUTION SUCCESS
+05:38:52.786 INFO  Total time: 42.648s

@@ -1,0 +1,14 @@
+{
+  "observedUtc": "2026-10-19T05:49:17.724423+00:00",
+  "python": "Python 3.13.3",
+  "bandit": "1.7.5",
+  "bcrypt": "4.2.1",
+  "scannerVersion": "8.1.0.6389",
+  "sonarVersion": "9.9.8.100196",
+  "scannerImage": [
+    "sonarsource/sonar-scanner-cli@sha256:a3f4215076706c95a17a68c19322ee916e40a3acd081a8c1a1e839e0194afa57"
+  ],
+  "sonarImage": [
+    "sonarqube@sha256:f709975ab31d2d08f5a3ae2dc73a31ee011afc8cf28845082c17c55d45df9df5"
+  ]
+}

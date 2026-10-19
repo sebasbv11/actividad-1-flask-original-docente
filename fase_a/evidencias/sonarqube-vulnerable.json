@@ -1,0 +1,245 @@
+{
+  "project": "actividad1-a-casos-vulnerable",
+  "source": "fase_a/login_sga_vulnerable.py",
+  "sha256": "f39f830519e451e122ba3e28520b4992e6d226be56bee57727913eeb48ec5a41",
+  "analysisId": "AaFSqsf22qT0k9Qyfa4K",
+  "generatedUtc": "2026-10-19T05:38:08.210900+00:00",
+  "issues": {
+    "total": 3,
+    "p": 1,
+    "ps": 500,
+    "paging": {
+      "pageIndex": 1,
+      "pageSize": 500,
+      "total": 3
+    },
+    "effortTotal": 15,
+    "issues": [
+      {
+        "key": "AaFSqs672qT0k9Qyfa4P",
+        "rule": "external_bandit:B105",
+        "severity": "MINOR",
+        "component": "actividad1-a-casos-vulnerable:fase_a/login_sga_vulnerable.py",
+        "project": "actividad1-a-casos-vulnerable",
+        "line": 13,
+        "hash": "7011dbe1b2fdaa75d2559c38d01dec04",
+        "textRange": {
+          "startLine": 13,
+          "endLine": 13,
+          "startOffset": 0,
+          "endOffset": 34
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Possible hardcoded password: 'Manabi2026'",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [],
+        "creationDate": "2026-10-19T05:37:32+0000",
+        "updateDate": "2026-10-19T05:37:32+0000",
+        "type": "VULNERABILITY",
+        "externalRuleEngine": "bandit",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": []
+      },
+      {
+        "key": "AaFSqs672qT0k9Qyfa4Q",
+        "rule": "external_bandit:B105",
+        "severity": "MINOR",
+        "component": "actividad1-a-casos-vulnerable:fase_a/login_sga_vulnerable.py",
+        "project": "actividad1-a-casos-vulnerable",
+        "line": 14,
+        "hash": "ced09c975182665e4f24b07bdd9a2bbc",
+        "textRange": {
+          "startLine": 14,
+          "endLine": 14,
+          "startOffset": 0,
+          "endOffset": 31
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Possible hardcoded password: 'Software6*'",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [],
+        "creationDate": "2026-10-19T05:37:32+0000",
+        "updateDate": "2026-10-19T05:37:32+0000",
+        "type": "VULNERABILITY",
+        "externalRuleEngine": "bandit",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": []
+      },
+      {
+        "key": "AaFSqs672qT0k9Qyfa4R",
+        "rule": "external_bandit:B608",
+        "severity": "MAJOR",
+        "component": "actividad1-a-casos-vulnerable:fase_a/login_sga_vulnerable.py",
+        "project": "actividad1-a-casos-vulnerable",
+        "line": 53,
+        "hash": "0113ec6a4de4fe9c311a3cbcc361d967",
+        "textRange": {
+          "startLine": 53,
+          "endLine": 53,
+          "startOffset": 0,
+          "endOffset": 35
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Possible SQL injection vector through string-based query construction.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [],
+        "creationDate": "2026-10-19T05:37:32+0000",
+        "updateDate": "2026-10-19T05:37:32+0000",
+        "type": "VULNERABILITY",
+        "externalRuleEngine": "bandit",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": []
+      }
+    ],
+    "components": [
+      {
+        "key": "actividad1-a-casos-vulnerable:fase_a/login_sga_vulnerable.py",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "login_sga_vulnerable.py",
+        "longName": "fase_a/login_sga_vulnerable.py",
+        "path": "fase_a/login_sga_vulnerable.py"
+      },
+      {
+        "key": "actividad1-a-casos-vulnerable",
+        "enabled": true,
+        "qualifier": "TRK",
+        "name": "Actividad 1 - Fase A - Casos 1 y 3 vulnerables",
+        "longName": "Actividad 1 - Fase A - Casos 1 y 3 vulnerables"
+      }
+    ],
+    "facets": []
+  },
+  "hotspots": {
+    "paging": {
+      "pageIndex": 1,
+      "pageSize": 500,
+      "total": 2
+    },
+    "hotspots": [
+      {
+        "key": "AaFSqs662qT0k9Qyfa4N",
+        "component": "actividad1-a-casos-vulnerable:fase_a/login_sga_vulnerable.py",
+        "project": "actividad1-a-casos-vulnerable",
+        "securityCategory": "auth",
+        "vulnerabilityProbability": "HIGH",
+        "status": "TO_REVIEW",
+        "line": 13,
+        "message": "\"password\" detected here, review this potentially hard-coded credential.",
+        "author": "",
+        "creationDate": "2026-10-19T05:37:32+0000",
+        "updateDate": "2026-10-19T05:37:32+0000",
+        "textRange": {
+          "startLine": 13,
+          "endLine": 13,
+          "startOffset": 0,
+          "endOffset": 34
+        },
+        "flows": [],
+        "ruleKey": "python:S2068",
+        "messageFormattings": []
+      },
+      {
+        "key": "AaFSqs672qT0k9Qyfa4O",
+        "component": "actividad1-a-casos-vulnerable:fase_a/login_sga_vulnerable.py",
+        "project": "actividad1-a-casos-vulnerable",
+        "securityCategory": "auth",
+        "vulnerabilityProbability": "HIGH",
+        "status": "TO_REVIEW",
+        "line": 14,
+        "message": "\"password\" detected here, review this potentially hard-coded credential.",
+        "author": "",
+        "creationDate": "2026-10-19T05:37:32+0000",
+        "updateDate": "2026-10-19T05:37:32+0000",
+        "textRange": {
+          "startLine": 14,
+          "endLine": 14,
+          "startOffset": 0,
+          "endOffset": 31
+        },
+        "flows": [],
+        "ruleKey": "python:S2068",
+        "messageFormattings": []
+      }
+    ],
+    "components": [
+      {
+        "key": "actividad1-a-casos-vulnerable:fase_a/login_sga_vulnerable.py",
+        "qualifier": "FIL",
+        "name": "login_sga_vulnerable.py",
+        "longName": "fase_a/login_sga_vulnerable.py",
+        "path": "fase_a/login_sga_vulnerable.py"
+      },
+      {
+        "key": "actividad1-a-casos-vulnerable",
+        "qualifier": "TRK",
+        "name": "Actividad 1 - Fase A - Casos 1 y 3 vulnerables",
+        "longName": "Actividad 1 - Fase A - Casos 1 y 3 vulnerables"
+      }
+    ]
+  },
+  "measures": {
+    "component": {
+      "key": "actividad1-a-casos-vulnerable",
+      "name": "Actividad 1 - Fase A - Casos 1 y 3 vulnerables",
+      "qualifier": "TRK",
+      "measures": [
+        {
+          "metric": "duplicated_lines_density",
+          "value": "0.0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_hotspots",
+          "value": "2",
+          "bestValue": false
+        },
+        {
+          "metric": "bugs",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_rating",
+          "value": "3.0",
+          "bestValue": false
+        },
+        {
+          "metric": "code_smells",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "vulnerabilities",
+          "value": "3",
+          "bestValue": false
+        },
+        {
+          "metric": "ncloc",
+          "value": "44"
+        }
+      ]
+    }
+  },
+  "qualityGate": {
+    "projectStatus": {
+      "status": "OK",
+      "conditions": [],
+      "periods": [],
+      "ignoredConditions": false,
+      "caycStatus": "compliant"
+    }
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "project": "actividad1-a-docente",
+  "source": "app.py",
+  "sha256": "a2740ddac198c430e906d9af82214086b6ecbdc69dec295592458f3dc7546245",
+  "analysisId": "AaFSqf3w2qT0k9Qyfa1T",
+  "generatedUtc": "2026-10-19T05:37:18.680417+00:00",
+  "issues": {
+    "total": 4,
+    "p": 1,
+    "ps": 500,
+    "paging": {
+      "pageIndex": 1,
+      "pageSize": 500,
+      "total": 4
+    },
+    "effortTotal": 20,
+    "issues": [
+      {
+        "key": "AaFSqLTQ2qT0k9Qyfay9",
+        "rule": "external_bandit:B404",
+        "severity": "MINOR",
+        "component": "actividad1-a-docente:app.py",
+        "project": "actividad1-a-docente",
+        "line": 2,
+        "hash": "a1a8dc0775187d0ed3ee734f4ea7d123",
+        "textRange": {
+          "startLine": 2,
+          "endLine": 2,
+          "startOffset": 0,
+          "endOffset": 17
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Consider possible security implications associated with the subprocess module.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [],
+        "creationDate": "2026-10-19T05:35:16+0000",
+        "updateDate": "2026-10-19T05:35:16+0000",
+        "type": "VULNERABILITY",
+        "externalRuleEngine": "bandit",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": []
+      },
+      {
+        "key": "AaFSqLTQ2qT0k9Qyfay-",
+        "rule": "external_bandit:B603",
+        "severity": "MINOR",
+        "component": "actividad1-a-docente:app.py",
+        "project": "actividad1-a-docente",
+        "line": 49,
+        "hash": "98dc18f89599b169dbc90e4baab31ff1",
+        "textRange": {
+          "startLine": 49,
+          "endLine": 49,
+          "startOffset": 0,
+          "endOffset": 32
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [],
+        "creationDate": "2026-10-19T05:35:16+0000",
+        "updateDate": "2026-10-19T05:35:16+0000",
+        "type": "VULNERABILITY",
+        "externalRuleEngine": "bandit",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": []
+      },
+      {
+        "key": "AaFSqLTQ2qT0k9Qyfay_",
+        "rule": "external_bandit:B603",
+        "severity": "MINOR",
+        "component": "actividad1-a-docente:app.py",
+        "project": "actividad1-a-docente",
+        "line": 82,
+        "hash": "73a4afa7cd283561d7380439b88c71ec",
+        "textRange": {
+          "startLine": 82,
+          "endLine": 82,
+          "startOffset": 0,
+          "endOffset": 35
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "subprocess call - check for execution of untrusted input.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [],
+        "creationDate": "2026-10-19T05:35:16+0000",
+        "updateDate": "2026-10-19T05:35:16+0000",
+        "type": "VULNERABILITY",
+        "externalRuleEngine": "bandit",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": []
+      },
+      {
+        "key": "AaFSqLTQ2qT0k9QyfazA",
+        "rule": "external_bandit:B104",
+        "severity": "MAJOR",
+        "component": "actividad1-a-docente:app.py",
+        "project": "actividad1-a-docente",
+        "line": 108,
+        "hash": "9b7288b136177c7c0c0da7ef3cd166cf",
+        "textRange": {
+          "startLine": 108,
+          "endLine": 108,
+          "startOffset": 0,
+          "endOffset": 51
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Possible binding to all interfaces.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [],
+        "creationDate": "2026-10-19T05:35:16+0000",
+        "updateDate": "2026-10-19T05:35:16+0000",
+        "type": "VULNERABILITY",
+        "externalRuleEngine": "bandit",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": []
+      }
+    ],
+    "components": [
+      {
+        "key": "actividad1-a-docente:app.py",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "app.py",
+        "longName": "app.py",
+        "path": "app.py"
+      },
+      {
+        "key": "actividad1-a-docente",
+        "enabled": true,
+        "qualifier": "TRK",
+        "name": "Actividad 1 - Fase A - Original docente",
+        "longName": "Actividad 1 - Fase A - Original docente"
+      }
+    ],
+    "facets": []
+  },
+  "hotspots": {
+    "paging": {
+      "pageIndex": 1,
+      "pageSize": 500,
+      "total": 1
+    },
+    "hotspots": [
+      {
+        "key": "AaFSqLTQ2qT0k9Qyfay8",
+        "component": "actividad1-a-docente:app.py",
+        "project": "actividad1-a-docente",
+        "securityCategory": "csrf",
+        "vulnerabilityProbability": "HIGH",
+        "status": "TO_REVIEW",
+        "line": 9,
+        "message": "Make sure disabling CSRF protection is safe here.",
+        "author": "",
+        "creationDate": "2026-10-19T05:35:16+0000",
+        "updateDate": "2026-10-19T05:35:16+0000",
+        "textRange": {
+          "startLine": 9,
+          "endLine": 9,
+          "startOffset": 6,
+          "endOffset": 21
+        },
+        "flows": [],
+        "ruleKey": "python:S4502",
+        "messageFormattings": []
+      }
+    ],
+    "components": [
+      {
+        "key": "actividad1-a-docente:app.py",
+        "qualifier": "FIL",
+        "name": "app.py",
+        "longName": "app.py",
+        "path": "app.py"
+      },
+      {
+        "key": "actividad1-a-docente",
+        "qualifier": "TRK",
+        "name": "Actividad 1 - Fase A - Original docente",
+        "longName": "Actividad 1 - Fase A - Original docente"
+      }
+    ]
+  },
+  "measures": {
+    "component": {
+      "key": "actividad1-a-docente",
+      "name": "Actividad 1 - Fase A - Original docente",
+      "qualifier": "TRK",
+      "measures": [
+        {
+          "metric": "security_hotspots",
+          "value": "1",
+          "bestValue": false
+        },
+        {
+          "metric": "duplicated_lines_density",
+          "value": "0.0",
+          "bestValue": true
+        },
+        {
+          "metric": "vulnerabilities",
+          "value": "4",
+          "bestValue": false
+        },
+        {
+          "metric": "security_rating",
+          "value": "3.0",
+          "bestValue": false
+        },
+        {
+          "metric": "ncloc",
+          "value": "86"
+        },
+        {
+          "metric": "bugs",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "code_smells",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    }
+  },
+  "qualityGate": {
+    "projectStatus": {
+      "status": "OK",
+      "conditions": [
+        {
+          "status": "OK",
+          "metricKey": "new_reliability_rating",
+          "comparator": "GT",
+          "periodIndex": 1,
+          "errorThreshold": "1",
+          "actualValue": "1"
+        },
+        {
+          "status": "OK",
+          "metricKey": "new_security_rating",
+          "comparator": "GT",
+          "periodIndex": 1,
+          "errorThreshold": "1",
+          "actualValue": "1"
+        },
+        {
+          "status": "OK",
+          "metricKey": "new_maintainability_rating",
+          "comparator": "GT",
+          "periodIndex": 1,
+          "errorThreshold": "1",
+          "actualValue": "1"
+        }
+      ],
+      "periods": [
+        {
+          "index": 1,
+          "mode": "PREVIOUS_VERSION",
+          "date": "2026-10-19T05:35:16+0000"
+        }
+      ],
+      "ignoredConditions": false,
+      "period": {
+        "mode": "PREVIOUS_VERSION",
+        "date": "2026-10-19T05:35:16+0000"
+      },
+      "caycStatus": "compliant"
+    }
+  }
+}

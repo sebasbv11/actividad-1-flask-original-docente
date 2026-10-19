@@ -1,0 +1,28 @@
+{
+  "createdUtc": "2026-10-19T05:36:29.228981+00:00",
+  "sonarVersion": "9.9.8.100196",
+  "projects": [
+    {
+      "label": "docente",
+      "project": "actividad1-a-docente",
+      "source": "app.py",
+      "sha256": "a2740ddac198c430e906d9af82214086b6ecbdc69dec295592458f3dc7546245",
+      "analysisId": "AaFSqf3w2qT0k9Qyfa1T"
+    },
+    {
+      "label": "vulnerable",
+      "project": "actividad1-a-casos-vulnerable",
+      "source": "fase_a/login_sga_vulnerable.py",
+      "sha256": "f39f830519e451e122ba3e28520b4992e6d226be56bee57727913eeb48ec5a41",
+      "analysisId": "AaFSqsf22qT0k9Qyfa4K"
+    },
+    {
+      "label": "corregido",
+      "project": "actividad1-a-casos-corregido",
+      "source": "fase_a/login_sga_refactorizado.py",
+      "sha256": "41cb0d7bc5bd44a2a9990ac83f3c861e43bb1dce533e68db935fc99d6a237799",
+      "analysisId": "AaFSq38k2qT0k9Qyfa7W"
+    }
+  ],
+  "scope": "Original docente y ejemplo complementario de autenticacion; no son el mismo programa."
+}
