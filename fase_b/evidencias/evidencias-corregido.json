@@ -1,0 +1,20 @@
+{
+  "source": "ZAP API",
+  "alerts": [],
+  "error_responses": [],
+  "age_requests": [
+    {
+      "note": "",
+      "rtt": "27",
+      "responseBody": "<!doctype html>\n<html lang=\"es\">\n<head><meta charset=\"utf-8\"><title>Validacion de edad</title></head>\n<body>\n  <h1>Validacion de edad</h1>\n  <p>Ingrese una edad entera entre 0 y 120.</p>\n  <a href=\"/\">Volver al laboratorio</a>\n</body>\n</html>",
+      "cookieParams": "",
+      "requestBody": "",
+      "responseHeader": "HTTP/1.1 400 BAD REQUEST\r\nServer: Werkzeug/3.1.9 Python/3.13.3\r\nDate: Mon, 19 Oct 2026 06:07:43 GMT\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 242\r\nConnection: close\r\n\r\n",
+      "requestHeader": "GET http://host.docker.internal:5011/age?age=abc HTTP/1.1\r\nHost: host.docker.internal:5011\r\nUser-Agent: python-requests/2.34.2\r\nAccept: */*\r\nConnection: keep-alive\r\n\r\n",
+      "id": "1",
+      "type": "1",
+      "timestamp": "1792390064866",
+      "tags": []
+    }
+  ]
+}

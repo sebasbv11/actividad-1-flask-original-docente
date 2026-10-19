@@ -1,5 +1,23 @@
 # Actividad 1 Aplicación Flask original del docente
 
+## Práctica de seguridad
+
+Esta rama `owasp-zap` añade la fase B en `fase_b/`, con escaneo activo y
+comparación de las variantes vulnerable y corregida. El código original de la
+raíz permanece intacto. Los formularios de comentarios y edad son un laboratorio
+complementario de los casos 4 y 2.
+
+- [Informe breve y reproducción](fase_b/INFORME.md)
+- [Documento Word resumido de las fases A y B](fase_b/Informe_SAST_DAST.docx)
+- [Evidencias ZAP originales](fase_b/evidencias)
+- [Fase A con SonarQube local](https://github.com/sebasbv11/actividad-1-flask-original-docente/tree/sonarqube)
+
+Con Docker iniciado, ejecutar `python fase_b/ejecutar_dast.py`. Para consultar
+los resultados guardados, ejecutar `python fase_b/ver_resultados.py` y abrir
+http://127.0.0.1:5019/.
+
+## Código del docente
+
 Transcripción del código de la guía **Unidad2_AnalisisEsSAST.pdf**, titulada
 «Implementación de análisis estático de código», páginas 1 a 11.
 

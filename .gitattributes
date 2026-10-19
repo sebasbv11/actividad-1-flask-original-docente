@@ -1,0 +1,2 @@
+# Conservar los bytes originales de los informes y evidencias exportados.
+fase_b/evidencias/* -text

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><title>Fase B - Laboratorio DAST</title></head>
+<body>
+  <h1>Laboratorio DAST - {{ 'mitigado' if secure else 'vulnerable' }}</h1>
+  <p>Escenarios de prueba con datos sinteticos. Solo uso local.</p>
+  <h2>Caso 4: comentarios y XSS almacenado</h2>
+  <form action="/comment" method="post">
+    <label>Comentario <input name="comment" type="text" value="Comentario de prueba"></label>
+    <button type="submit">Guardar comentario</button>
+  </form>
+  <ul>
+  {% for comment in comments %}
+    {% if secure %}
+    <!-- MITIGACION: el escape automatico de Jinja muestra la entrada como texto. -->
+    <li>{{ comment }}</li>
+    {% else %}
+    <!-- CASO 4: fallo intencional; safe permite interpretar el HTML del usuario. -->
+    <li>{{ comment | safe }}</li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+  <h2>Caso 2: errores del servidor</h2>
+  <form action="/age" method="get">
+    <label>Edad <input name="age" type="text" value="20"></label>
+    <button type="submit">Validar edad</button>
+  </form>
+  <p><a href="/age?age=20">Validacion de ejemplo</a></p>
+</body>
+</html>

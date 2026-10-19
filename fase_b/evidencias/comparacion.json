@@ -1,0 +1,127 @@
+{
+  "target": "http://host.docker.internal:5011/",
+  "image": "ghcr.io/zaproxy/zaproxy@sha256:7aaa659b0d43078febd82e29bad112285c370727e86ab8340444220e17d9f0d2",
+  "results": [
+    {
+      "mode": "vulnerable",
+      "version": "2.17.0",
+      "severity": {
+        "3": 2,
+        "2": 4,
+        "1": 3,
+        "0": 1
+      },
+      "alertTypes": 10,
+      "rules": [
+        {
+          "id": "40014",
+          "name": "Cross Site Scripting (Persistent)",
+          "risk": "High (Medium)",
+          "instances": 1
+        },
+        {
+          "id": "40012",
+          "name": "Cross Site Scripting (Reflected)",
+          "risk": "High (Medium)",
+          "instances": 1
+        },
+        {
+          "id": "10202",
+          "name": "Absence of Anti-CSRF Tokens",
+          "risk": "Medium (Low)",
+          "instances": 1
+        },
+        {
+          "id": "30001",
+          "name": "Buffer Overflow",
+          "risk": "Medium (Medium)",
+          "instances": 1
+        },
+        {
+          "id": "10038",
+          "name": "Content Security Policy (CSP) Header Not Set",
+          "risk": "Medium (High)",
+          "instances": 4
+        },
+        {
+          "id": "10020",
+          "name": "Missing Anti-clickjacking Header",
+          "risk": "Medium (Medium)",
+          "instances": 2
+        },
+        {
+          "id": "90022",
+          "name": "Application Error Disclosure",
+          "risk": "Low (Medium)",
+          "instances": 1
+        },
+        {
+          "id": "10036",
+          "name": "Server Leaks Version Information via \"Server\" HTTP Response Header Field",
+          "risk": "Low (High)",
+          "instances": 5
+        },
+        {
+          "id": "10021",
+          "name": "X-Content-Type-Options Header Missing",
+          "risk": "Low (Medium)",
+          "instances": 2
+        },
+        {
+          "id": "10104",
+          "name": "User Agent Fuzzer",
+          "risk": "Informational (Medium)",
+          "instances": 5
+        }
+      ]
+    },
+    {
+      "mode": "corregido",
+      "version": "2.17.0",
+      "severity": {
+        "2": 3,
+        "1": 2,
+        "0": 1
+      },
+      "alertTypes": 6,
+      "rules": [
+        {
+          "id": "10202",
+          "name": "Absence of Anti-CSRF Tokens",
+          "risk": "Medium (Low)",
+          "instances": 1
+        },
+        {
+          "id": "10038",
+          "name": "Content Security Policy (CSP) Header Not Set",
+          "risk": "Medium (High)",
+          "instances": 4
+        },
+        {
+          "id": "10020",
+          "name": "Missing Anti-clickjacking Header",
+          "risk": "Medium (Medium)",
+          "instances": 2
+        },
+        {
+          "id": "10036",
+          "name": "Server Leaks Version Information via \"Server\" HTTP Response Header Field",
+          "risk": "Low (High)",
+          "instances": 5
+        },
+        {
+          "id": "10021",
+          "name": "X-Content-Type-Options Header Missing",
+          "risk": "Low (Medium)",
+          "instances": 2
+        },
+        {
+          "id": "10104",
+          "name": "User Agent Fuzzer",
+          "risk": "Informational (Medium)",
+          "instances": 5
+        }
+      ]
+    }
+  ]
+}
